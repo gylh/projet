@@ -37,7 +37,7 @@ if (isset($_POST['commander'])) {
             @$id[$i] = $ids[$i];
         }
     }
-    $_SESSION['commande'] =implode('|',$id);
+    $_SESSION['commande'] =implode('/',$id);
     header('Location:client.php');
 }
 
