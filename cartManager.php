@@ -56,7 +56,7 @@ if (isset($_POST['send'])) {
                 foreach ($result1 as $value) {
                    $idClient = $value['id'];
                 }
-                $date = date("d/m/Y \à H:i:s");;
+                $date = date("d/m/Y \à H:i:s");
                 $command = $_SESSION['commande'];
                 $toto = $_SESSION['total'];
                 $commande = "INSERT INTO commande(produit,total,idClient,statut,createdDate) VALUES('".$_SESSION['commande']."','$toto','$idClient','Non livrer','$date')";
